@@ -1,16 +1,20 @@
 header {
     position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+.header_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
     gap: 16px;
 }
 
-header > div {
+header > div > div {
     flex: 1;           /* take the leftover space */
     /* max-width: 600px;  stop growing at this width */
     min-width: 0;      /* allow shrinking on small screens */
