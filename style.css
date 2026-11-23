@@ -16,3 +16,12 @@ header > div {
     min-width: 0;      /* allow shrinking on small screens */
     /* margin-top: 20px;*/ /*not sure if I want it yet, put it just in case, yet to add it to the rest of the elements*/
 }
+
+.logo_mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo_not_mobile{ display: none; }
+    .logo_mobile { display: block; }
+}
