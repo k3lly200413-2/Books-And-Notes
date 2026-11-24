@@ -46,7 +46,6 @@ header > div > div {
 }
 
 .card-cover img {
-    /* not sure why if I use size it goes bad */
     width: 100%;
     height: 100%;
     object-fit: cover;         /* fill the box and crop whatever doesn't fit */
