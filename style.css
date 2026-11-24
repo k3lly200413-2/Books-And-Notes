@@ -38,6 +38,21 @@ header > div > div {
     object-position: center; /* which part stays visible */
 }
 
+.card-cover {
+    width: 140px;              /* narrower than the image, so the sides get cut */
+    aspect-ratio: 2 / 3;       /* book-cover proportions, adjust to taste */
+    overflow: hidden;
+    border-radius: 15px;       /* moved here from the img so the crop is rounded too */
+}
+
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* fill the box and crop whatever doesn't fit */
+    object-position: center;   /* which part stays visible */
+    display: block;
+}
+
 @media (max-width: 768px) {
     .logo_not_mobile{ display: none; }
     .logo_mobile { display: block; }
