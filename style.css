@@ -53,6 +53,14 @@ header > div > div {
     display: block;
 }
 
+.title {
+    font-size: .95rem;
+}
+
+.author {
+    font-size: .85rem;
+}
+
 @media (max-width: 768px) {
     .logo_not_mobile{ display: none; }
     .logo_mobile { display: block; }
