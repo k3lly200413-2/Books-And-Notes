@@ -95,7 +95,16 @@ header > div > div {
     width: 100%;
 }
 
+.price {
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .old-price {
+    width: 50%;
+    /* flex: 1; */
     overflow: hidden;
     white-space: nowrap;
     text-decoration: line-through;
