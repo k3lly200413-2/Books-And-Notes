@@ -39,6 +39,7 @@ header > div > div {
 }
 
 .card-cover {
+    display: flex;
     max-width: 140px;
     aspect-ratio: 5 / 6;        /* simple proportions used in original site */
     overflow: hidden;           /* whatever goes over the border gets cut off */
@@ -53,12 +54,52 @@ header > div > div {
     display: block;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 140px;
+}
+
+.row {
+    /* width: 100%; */
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.rating {
+    font-size: .85rem;
+    margin: 0;
+}
+
 .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: .95rem;
+    margin: 0;
 }
 
 .author {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: .85rem;
+    text-align: left;
+}
+
+.row-bottom {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+}
+
+.old-price {
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: line-through;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
