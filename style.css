@@ -110,11 +110,26 @@ header > div > div {
 .wish {
     z-index: 30;
     position: absolute;
-    top: .75rem;
-    right: .75rem;
+    top: .30rem;
+    right: .30rem;
     border-radius: 50%;
     border: none;
     color: black;
+}
+
+.wish:hover,
+.wish:active,
+.wish:focus {
+    background: var(--color-3);   /* same color in every state */
+    outline: none;
+    box-shadow: none;
+}
+
+.cart {
+    width: 35;
+    height: 35;
+    background: none;
+    border: none;
 }
 
 .btn-primary {
