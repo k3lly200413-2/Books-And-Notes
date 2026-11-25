@@ -76,6 +76,8 @@ header > div > div {
 }
 
 .card-wrapper {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-2);
     max-width: fit-content;
 }
