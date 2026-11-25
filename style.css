@@ -115,6 +115,17 @@ header > div > div {
     border-radius: 50%;
     border: none;
     color: black;
+    display: flex;              /* centers the svg inside */
+    align-items: center;
+    justify-content: center;
+    width: 24px;                /* equal width and height makes the circle */
+    height: 24px;
+    padding: 0;                 /* removes the default button padding */
+    line-height: 0;             /* removes the baseline gap */
+}
+
+.wish svg {
+    display: block;
 }
 
 .wish:hover,
