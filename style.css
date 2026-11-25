@@ -75,6 +75,11 @@ header > div > div {
     object-position: center; /* which part stays visible */
 }
 
+.card-wrapper {
+    background-color: var(--color-2);
+    max-width: fit-content;
+}
+
 .card-cover {
     position: relative;
     display: flex;
@@ -119,6 +124,7 @@ header > div > div {
     flex-direction: column;
     flex-shrink: 0;
     max-width: 140px;
+    padding-bottom: 0;
     /* background-color: var(--color-2); */
 }
 
@@ -128,6 +134,7 @@ header > div > div {
     flex-shrink: 0;
     justify-content: space-between;
 }
+
 
 .rating {
     font-size: .85rem;
