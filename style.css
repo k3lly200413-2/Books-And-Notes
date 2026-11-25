@@ -55,6 +55,9 @@ header > div > div {
     /* margin-top: 20px;*/ /*not sure if I want it yet, put it just in case, yet to add it to the rest of the elements*/
 }
 
+.logo_not_mobile {
+    display: block;
+}
 .logo_mobile {
     display: none;
 }
