@@ -39,6 +39,7 @@ header > div > div {
 }
 
 .card-cover {
+    position: relative;
     display: flex;
     max-width: 140px;
     aspect-ratio: 5 / 6;        /* simple proportions used in original site */
@@ -52,6 +53,16 @@ header > div > div {
     object-fit: cover;         /* fill the box and crop whatever doesn't fit */
     object-position: center;   /* which part stays visible */
     display: block;
+}
+
+.wish {
+    z-index: 30;
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    border-radius: 50%;
+    border: none;
+    color: black;
 }
 
 .card-body {
