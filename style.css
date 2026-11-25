@@ -1,9 +1,9 @@
 :root {
-  --color-1: #271638;
-  --color-2: #1d0f29;
-  --color-3: #ae6686;
-  --color-4: #9f77b4;
-  --color-5: #ffa2b7;
+  --color-1: #BCAC9B;  /* Khaki Beige: page background */
+  --color-2: #DDC9B4;  /* Pale Oak: header, cards, footer */
+  --color-3: #7A6C5D;  /* Olive Wood: accent (links, buttons, new price, heart) */
+  --color-4: #2A3D45;  /* Charcoal Blue: old price, input border, button hover */
+  --color-5: #2A3D45;  /* Charcoal Blue: main text */
 }
 
 header {
