@@ -116,7 +116,7 @@ header > div > div {
     flex-direction: column;
     flex-shrink: 0;
     max-width: 140px;
-    background-color: var(--color-2);
+    /* background-color: var(--color-2); */
 }
 
 .row {
@@ -149,26 +149,39 @@ header > div > div {
 
 .row-bottom {
     display: flex;
+    align-items: center; /* aligns all items inside row */
     gap: 6px;
-    width: 100%;
+}
+
+.new-price,
+.old-price {
+    margin: 0;             /* removes Bootstrap's default <p> margin */
 }
 
 .new-price {
-    width: 50%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    flex-shrink: 0;        /* not sure if keeping elipsis or not */
     color: var(--color-3);
 }
 
 .old-price {
-    width: 50%;
-    /* flex: 1; */
+    flex: 1;               /*   shorthand for
+                                    flex-grow : 1;    ➜    The div will grow in same proportion as the window-size       
+                                    flex-shrink : 1;  ➜    The div will shrink in same proportion as the window-size 
+                                    flex-basis : 0;   ➜    The div does not have a starting value as such and will 
+                                                            take up screen as per the screen size available for
+                                                            e.g:- if 3 divs are in the wrapper then each div will take 33%. */
+    min-width: 0;
     overflow: hidden;
     white-space: nowrap;
-    text-decoration: line-through;
     text-overflow: ellipsis;
+    text-decoration: line-through;
     color: var(--color-4);
+}
+
+.row-bottom > div {
+    flex-shrink: 0;         /* div does not shrink */
+    margin-left: auto;
+    line-height: 0;         /* interlinea */
 }
 
 @media (max-width: 768px) {
