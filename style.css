@@ -10,8 +10,10 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    padding-top: 10px;
     background-color: var(--color-2);
 }
+
 .header_wrapper {
     display: flex;
     justify-content: space-between;
