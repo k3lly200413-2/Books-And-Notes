@@ -141,5 +141,5 @@
             [ 'src' => './img/test_image_3.svg', 'alt' => 'Some Other Other Image' ],
         ];
 
-        require("home.php");
+        require("./home/home.php");
     ?>
