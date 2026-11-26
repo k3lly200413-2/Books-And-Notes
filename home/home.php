@@ -104,6 +104,11 @@
             </div>
         </section>
     <?php endforeach; ?>
+
+    <!-- 
+        TODO: Add featured Users section
+         
+    -->
     
     <!-- Footer -->
     <!-- text-lg-start => Start aligned text on viewports sized LG (large) or wider -->

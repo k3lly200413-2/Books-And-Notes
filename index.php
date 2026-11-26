@@ -33,7 +33,7 @@
                 'id'     => 2,
                 'title'  => 'Fourth Wing',
                 'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
+                'image'  => './img/f3af7799-f885-4c78-9ed9-ae32960dcb19.webp',
                 'rating' => 4.6,
                 'price'  => 9.50,          // no old_price, so that element is skipped
             ],
