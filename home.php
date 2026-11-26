@@ -106,7 +106,7 @@
     
     <section style="max-width: 1200px; display: flex; margin: 0 auto; flex-direction: column;">
         <h2>Today's bestsellers</h2>
-        <div class="overflow-scroll" style="display: flex; justify-content: space-between;">
+        <div class="scroll">
             <?php foreach ($bestSeller as $book): ?>
                 <?php include 'card.php'; ?>
             <?php endforeach; ?>

@@ -22,14 +22,14 @@
             'price'     => 10.00,
             'old_price' => 13.00,
         ],
-        // [
-        //     'id'     => 2,
-        //     'title'  => 'Fourth Wing',
-        //     'author' => 'Rebecca Yarros',
-        //     'image'  => './img/fourth-wing.webp',
-        //     'rating' => 4.6,
-        //     'price'  => 9.50,          // no old_price, so that element is skipped
-        // ],
+        [
+            'id'     => 2,
+            'title'  => 'Fourth Wing',
+            'author' => 'Rebecca Yarros',
+            'image'  => './img/fourth-wing.webp',
+            'rating' => 4.6,
+            'price'  => 9.50,          // no old_price, so that element is skipped
+        ],
     ];
 
     require("home.php");

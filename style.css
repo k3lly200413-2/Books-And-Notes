@@ -77,6 +77,19 @@ header > div > div {
     object-position: center; /* which part stays visible */
 }
 
+.scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 8px 0 12px;        /* top padding stops the hover lift from being clipped */
+    scroll-snap-type: x proximity;
+}
+
+.scroll > .card-wrapper {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
 .card-wrapper {
     display: flex;
     flex-direction: column;
@@ -160,7 +173,7 @@ header > div > div {
     flex-direction: column;
     flex-shrink: 0;
     max-width: 140px;
-    padding-bottom: 0;
+    /* padding: 5 5; */
     /* background-color: var(--color-2); */
 }
 
@@ -196,7 +209,15 @@ header > div > div {
 .row-bottom {
     display: flex;
     align-items: center; /* aligns all items inside row */
-    gap: 6px;
+    /* gap: 2px; */
+    width: 100%;
+}
+
+.row-bottom > div {
+    margin-left: auto;
+    /* margin-right: 2px; */
+    flex-shrink: 0;
+    line-height: 0;
 }
 
 .new-price,
