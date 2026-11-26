@@ -86,6 +86,8 @@
             <!-- would like a line to seperate but not sure how to colour <hr color="red"> -->
         </div>
     </header>
+
+
     <!-- carousel for images -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -94,6 +96,8 @@
             <?php endforeach; ?>
         </div>
     </div>
+
+    
     <?php foreach($titles as $title): ?>
         <section style="max-width: 1200px; display: flex; margin: 0 auto; flex-direction: column;">
             <h2><?php echo($title); ?></h2>
@@ -105,9 +109,12 @@
         </section>
     <?php endforeach; ?>
 
+
     <!-- 
         TODO: Add featured Users section
-         
+        * PFP
+        * Rating
+        * Notes Category    * Follow button
     -->
     
     <!-- Footer -->
