@@ -12,6 +12,7 @@ header {
     width: 100%;
     padding-top: 10px;
     background-color: var(--color-2);
+    z-index: 40;
 }
 
 .header_wrapper {
@@ -251,9 +252,17 @@ header > div > div {
     line-height: 0;         /* interlinea */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .logo_not_mobile{ display: none; }
     .logo_mobile { display: block; }
+    
+    header {
+        position: static;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        background-color: var(--color-2);
+    }
 }
 
 footer {
