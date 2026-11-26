@@ -100,18 +100,16 @@
             </div>
         </div>
     </div>
-
-    <!-- TODO: Use php to reoeate these all the times we need -->
-
-    
-    <section style="max-width: 1200px; display: flex; margin: 0 auto; flex-direction: column;">
-        <h2>Today's bestsellers</h2>
-        <div class="scroll">
-            <?php foreach ($bestSeller as $book): ?>
-                <?php include 'card.php'; ?>
-            <?php endforeach; ?>
-        </div>
-    </section>
+    <?php foreach($titles as $title): ?>
+        <section style="max-width: 1200px; display: flex; margin: 0 auto; flex-direction: column;">
+            <h2><?php echo($title); ?></h2>
+            <div class="scroll">
+                <?php foreach ($bestSeller as $book): ?>
+                    <?php include 'card.php'; ?>
+                <?php endforeach; ?>
+            </div>
+        </section>
+    <?php endforeach; ?>
     
     <!-- Footer -->
     <!-- text-lg-start => Start aligned text on viewports sized LG (large) or wider -->

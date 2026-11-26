@@ -84,7 +84,16 @@ header > div > div {
     overflow-x: auto;
     padding: 8px 0 12px;        /* top padding stops the hover lift from being clipped */
     scroll-snap-type: x proximity;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+    
+/*chrome*/
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 .scroll > .card-wrapper {
     flex-shrink: 0;
@@ -107,7 +116,7 @@ header > div > div {
 .card-cover {
     position: relative;
     display: flex;
-    max-width: 140px;
+    max-width: 160px;
     aspect-ratio: 5 / 6;        /* simple proportions used in original site */
     overflow: hidden;           /* whatever goes over the border gets cut off */
     border-radius: 15px;        /* moved here from the img so the crop is rounded too */
@@ -173,7 +182,7 @@ header > div > div {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    max-width: 140px;
+    max-width: 160px;
     /* padding: 5 5; */
     /* background-color: var(--color-2); */
 }
@@ -224,6 +233,7 @@ header > div > div {
 .new-price,
 .old-price {
     margin: 0;             /* removes Bootstrap's default <p> margin */
+    padding: 3px;
 }
 
 .new-price {
