@@ -89,15 +89,9 @@
     <!-- carousel for images -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/text_img_1.svg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/test_image_2.svg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./img/test_image_3.svg" alt="Third slide">
-            </div>
+            <?php foreach ($carouselImages as $i => $img): ?>
+                <?php include 'image_for_carousel.php'; ?>
+            <?php endforeach; ?>
         </div>
     </div>
     <?php foreach($titles as $title): ?>
