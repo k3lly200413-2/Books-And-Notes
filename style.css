@@ -375,9 +375,6 @@ header > div > div {
         width: 100%;
     }
 
-    .navbar div {
-    }
-
     /* Style the links inside the navigation bar */
     .navbar a {
         border-radius: 25px;
