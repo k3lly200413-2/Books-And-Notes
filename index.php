@@ -37,108 +37,27 @@
                 'rating' => 4.6,
                 'price'  => 9.50,          // no old_price, so that element is skipped
             ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
-            [
-                'id'     => 2,
-                'title'  => 'Fourth Wing',
-                'author' => 'Rebecca Yarros',
-                'image'  => './img/fourth-wing.webp',
-                'rating' => 4.6,
-                'price'  => 9.50,          // no old_price, so that element is skipped
-            ],
         ];
 
         $carouselImages = [
             [ 'src' => './img/text_img_1.svg', 'alt' => 'Some Image' ],
             [ 'src' => './img/test_image_2.svg', 'alt' => 'Some Other Image' ],
             [ 'src' => './img/test_image_3.svg', 'alt' => 'Some Other Other Image' ],
+        ];
+
+        $account = [
+            [
+                'username' => 'SomeUsername',
+                'image'    => './img/default-profile.webp',
+                'rating'   => 4.4,
+                'category' => 'Some Category',
+            ],
+            [
+                'username' => 'SomeUsername2',
+                'image'    => './img/default-profile.webp',
+                'rating'   => 3.9,
+                'category' => 'Another Category',
+            ],
         ];
 
         require("./home/home.php");

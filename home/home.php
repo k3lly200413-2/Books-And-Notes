@@ -120,19 +120,9 @@
     <section style="max-width: 1200px; display: flex; margin: 0 auto; flex-direction: column;">
         <h2>Featured Users</h2>
         <div class="scroll">
-            <!-- TODO: Create these classes -->
-            <div class="Featured Users">
-                <div class="UserPFP">
-                    <img src="./img/default-profile.webp" alt="Userpfp">
-                </div>
-                <div class="user-stats">
-                    <p>Rating: </p>
-                    <p>Notes Category: </p>
-                    <button type="button" aria-label="follow">
-                        Follow
-                    </button>
-                </div>
-            </div>
+            <?php foreach ($account as $f_u => $featured_user): ?>
+                <?php include 'featured-user.php'; ?>
+            <?php endforeach; ?>
         </div>
     </section>
     
